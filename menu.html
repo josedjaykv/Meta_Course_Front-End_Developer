@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=divice-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />    
     <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -17,86 +18,157 @@
         <li><a href="#">Contact</a></li>
     </ul>
 
-    <h1 id="header1">Our Menu</h1>
-    <div>
-        <h2>Falafel</h2>
-        <p>Our falafel is made with fresh chickpeas <br> and served with <strong>tahini</strong> sauce.</p>
-        <img src="pictures/falafel.jpg" alt="falafel">
+    <h1 id="header1" class="text-center">Our Menu</h1>
+
+    <!--
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px        
+    -->
+
+    <div class="container center-content">
+        <div class="row">
+
+            <div class="col-12">
+                <div class="alert alert-info custom-alert" role="alert">
+                    <strong>New Info!</strong> Try our new hummus dish!
+                </div>
+                <div class="alert alert-info custom-alert" role="alert">
+                    <strong>New Info!</strong> We offer free delivery for orders over $50.00.
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 mx-auto text-center">                
+                <h2 class="title">Dishes</h2>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <img src="pictures/falafel.jpg" class="card-img-top menu-image">
+                            <div class="card-body">
+                                <h2 class="card-title">Falafel</h2>
+                                <p class="card-text">Our falafel is made with fresh chickpeas <br> and served with <strong>tahini</strong> sauce.</p>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <img src="pictures/shawarma.jpg" class="card-img-top menu-image">
+                            <div class="card-body">
+                                <h2 class="card-title">Shawarma</h2>
+                                <p class="card-text">Our shawarma is made with fresh <strong>chicken</strong> <br> and served with tahini sauce.</p>                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <img src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2022/08/Hummus-main-1.jpg" class="card-img-top menu-image">
+                            <div class="card-body">
+                                <h2 class="card-title">Hummus <span class="badge bg-primary">New</span></h2>
+                                <p class="card-text">Our hummus is made with fresh chickpeas <br> and served with <strong>tahini</strong> sauce.</p>                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <img src="pictures/baklava.jpg" class="card-img-top menu-image">
+                            <div class="card-body">
+                                <h2 class="card-title">Baklava</h2>
+                                <p class="card-text">Our baklava is made with fresh <strong>chicken</strong> <br> and served with tahini sauce.</p>                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <img src="pictures/tabbouleh.jpg" class="card-img-top menu-image">
+                            <div class="card-body">
+                                <h2 class="card-title">Tabbouleh</h2>
+                                <p class="card-text">Our tabbouleh is made with fresh <strong>chicken</strong> <br> and served with tahini sauce.</p>                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <img src="pictures/labneh.jpg" class="card-img-top menu-image">
+                            <div class="card-body">
+                                <h2 class="card-title">Labneh</h2>
+                                <p class="card-text">Our labneh is made with fresh <strong>chicken</strong> <br> and served with tahini sauce.</p>                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <img src="pictures/manakish.jpg" alt="manakish" class="card-img-top menu-image">
+                            <div class="card-body">
+                                <h2 class="card-title">Manakish</h2>
+                                <p class="card-text">Our manakish is made with fresh <strong>chicken</strong> <br> and served with tahini sauce.</p>
+                            </div>                            
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <img src="pictures/shanklish.jpg" alt="shanklish" class="card-img-top menu-image">
+                            <div class="card-body">
+                                <h2 class="card-title">Shanklish</h2>
+                                <p class="card-text">Our shanklish is made with fresh <strong>chicken</strong> <br> and served with tahini sauce.</p>
+                            </div>                            
+                        </div>
+                    </div>
+
+                </div>             
+                
+            </div>
+
+            <div class="col-12 col-md-6 mx-auto text-center">
+                <h2 class="title">Prices</h2>
+                <table class="table">
+                    <tr>
+                        <td>Falafel</td>
+                        <td>$12.00</td>
+                    </tr>
+                    <tr>
+                        <td>Shawarma</td>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hummus</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Baklava</td>
+                        <td>$8.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tabbouleh</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Labneh</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Manakish</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Shanklish</td>
+                        <td>$10.00</td>
+                    </tr>                    
+                </table>                
+            </div>
+        </div>
     </div>
-    <div>
-        <h2>Shawarma</h2>
-        <p>Our shawarma is made with fresh <strong>chicken</strong> <br> and served with tahini sauce.</p>
-        <img src="pictures/shawarma.jpg" alt="shawarma">
-    </div>
-    <div>
-        <h2>Hummus</h2>
-        <p>Our hummus is made with fresh chickpeas <br> and served with <strong>tahini</strong> sauce.</p>
-        <img src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2022/08/Hummus-main-1.jpg" alt="hummus">
-    </div>
-    <div>
-        <h2>Baklava</h2>
-        <p>Our baklava is made with fresh <strong>chicken</strong> <br> and served with tahini sauce.</p>
-        <img src="pictures/baklava.jpg" alt="baklava">
-    </div>
-    <div>
-        <h2>Tabbouleh</h2>
-        <p>Our tabbouleh is made with fresh <strong>chicken</strong> <br> and served with tahini sauce.</p>
-        <img src="pictures/tabbouleh.jpg" alt="tabbouleh">
-    </div>
-    <div>
-        <h2>Labneh</h2>
-        <p>Our labneh is made with fresh <strong>chicken</strong> <br> and served with tahini sauce.</p>
-        <img src="pictures/labneh.jpg" alt="labneh">
-    </div>
-    <div>
-        <h2>Manakish</h2>
-        <p>Our manakish is made with fresh <strong>chicken</strong> <br> and served with tahini sauce.</p>
-        <img src="pictures/manakish.jpg" alt="manakish">
-    </div>
-    <div>
-        <h2>Shanklish</h2>
-        <p>Our shanklish is made with fresh <strong>chicken</strong> <br> and served with tahini sauce.</p>
-        <img src="pictures/shanklish.jpg" alt="shanklish">
-    </div>
-    <table>
-        <tr>
-            <th>Dish</th>
-            <th>Price</th>
-        </tr>
-        <tr>
-            <td>Falafel</td>
-            <td>$10.00</td>
-        </tr>
-        <tr>
-            <td>Shawarma</td>
-            <td>$12.00</td>
-        </tr>
-        <tr>
-            <td>Hummus</td>
-            <td>$8.00</td>
-        </tr>
-        <tr>
-            <td>Baklava</td>
-            <td>$6.00</td>
-        </tr>
-        <tr>
-            <td>Tabbouleh</td>
-            <td>$8.00</td>
-        </tr>
-        <tr>
-            <td>Labneh</td>
-            <td>$8.00</td>
-        </tr>
-        <tr>
-            <td>Manakish</td>
-            <td>$8.00</td>
-        </tr>
-        <tr>
-            <td>Shanklish</td>
-            <td>$8.00</td>
-        </tr>
-    </table>
-    <a href="location.html">Our location</a>
+    <a href="location.html" class="text-center d-block mx-auto">Our location</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>
